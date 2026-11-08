@@ -1,0 +1,1027 @@
+
+/* =================================
+   COMMON STYLES
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =================================
+   LOGIN PAGE
+================================= */
+
+.page-index {
+    background: #f4f4f9;
+}
+
+.main-heading {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* =================================
+   COMMON FORM CONTAINER
+================================= */
+
+.form-container {
+    background: white;
+    width: 540px;
+    max-width: 100%;
+    padding: 35px 40px;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Input Fields */
+
+.form-container input {
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.form-container input:focus {
+    outline: none;
+    border-color: #185a9d;
+}
+
+/* Error Messages */
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* Common Button */
+
+.form-container button {
+    background: linear-gradient(
+        to right,
+        #43cea2,
+        #185a9d
+    );
+
+    color: white;
+    padding: 12px;
+
+    border: none;
+    border-radius: 25px;
+
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.form-container button:hover {
+    transform: translateY(-2px);
+}
+
+/* =================================
+   SECOND PAGE - PERSONAL DETAILS
+================================= */
+
+body.page-personal {
+    background: #f4f4f9;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Personal Details Container */
+
+.personal-container {
+    background: white;
+    width: 540px;
+    max-width: 100%;
+
+    padding: 35px 40px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+
+.personal-container h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+/* Input Rows */
+
+.personal-container .form-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.personal-container .form-row > label {
+    width: 115px;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+/* Input Fields */
+
+.personal-container .form-row > input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 12px;
+
+    font-size: 14px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    margin: 0;
+}
+
+.personal-container .form-row > input:focus {
+    outline: none;
+    border-color: #185a9d;
+}
+
+/* Gender */
+
+.gender-options {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.gender-options input {
+    width: 15px;
+    height: 15px;
+
+    accent-color: #087bff;
+    cursor: pointer;
+}
+
+/* Personal Page Continue Button */
+
+.personal-container button {
+    display: block;
+    width: auto;
+    min-width: 120px;
+
+    margin: 25px auto 0;
+    padding: 12px 20px;
+
+    background: linear-gradient(
+        to right,
+        #43cea2,
+        #185a9d
+    );
+
+    color: white;
+    border: none;
+    border-radius: 30px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.personal-container button:hover {
+    transform: translateY(-2px);
+}
+
+/* =================================
+   THIRD PAGE - REGISTRATION
+================================= */
+
+body.page-index {
+    background: #f4f4f9;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Registration Container */
+
+body.page-index .form-container {
+    background: white;
+
+    width: 540px;
+    max-width: 100%;
+
+    padding: 35px 40px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Registration Heading */
+
+body.page-index .form-container h2 {
+    text-align: center;
+    font-size: 28px;
+
+    margin-bottom: 30px;
+
+    color: #333;
+}
+
+/* Input Groups */
+
+body.page-index .input-group {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+/* Labels */
+
+body.page-index .input-group label {
+    display: block;
+
+    font-size: 16px;
+    color: #333;
+
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+
+body.page-index .form-container input {
+    width: 100%;
+
+    padding: 12px;
+    padding-right: 40px;
+
+    margin: 8px 0 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    font-size: 15px;
+}
+
+body.page-index .form-container input:focus {
+    outline: none;
+    border-color: #185a9d;
+}
+
+/* Eye Icon */
+
+body.page-index .toggle-icon {
+    position: absolute;
+
+    right: 12px;
+    top: 37px;
+
+    cursor: pointer;
+    color: #777;
+
+    font-size: 16px;
+}
+
+/* Password Requirements */
+
+.password-rules {
+    list-style: none;
+
+    padding: 0;
+    margin: 10px 0 12px;
+
+    font-size: 13px;
+    color: #d9534f;
+}
+
+.password-rules li {
+    margin-bottom: 6px;
+    transition: color 0.2s ease;
+}
+
+.password-rules li.valid {
+    color: #28a745;
+}
+
+.password-rules li i {
+    margin-right: 8px;
+    width: 16px;
+}
+
+/* Registration Button */
+
+body.page-index .form-container button {
+    display: block;
+
+    width: auto;
+    min-width: 120px;
+
+    margin: 20px auto 0;
+    padding: 12px 20px;
+
+    background: linear-gradient(
+        to right,
+        #43cea2,
+        #185a9d
+    );
+
+    color: white;
+    border: none;
+    border-radius: 30px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body.page-index .form-container button:hover {
+    transform: translateY(-2px);
+}
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 600px) {
+
+    .personal-container,
+    body.page-index .form-container {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .personal-container h2,
+    body.page-index .form-container h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .personal-container .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .personal-container .form-row > label {
+        width: 100%;
+    }
+
+    .personal-container .form-row > input {
+        width: 100%;
+    }
+
+}
+
+
+/* =================================
+   EDUCATION DETAILS PAGE
+================================= */
+
+body.page-education {
+    background: #f4f4f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+/* Main Container */
+
+.education-container {
+    background: white;
+    width: 620px;
+    max-width: 100%;
+    padding: 35px 45px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* Heading */
+
+.education-container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.education-subtitle {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Progress Steps */
+
+.progress-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    color: #999;
+}
+
+.step span {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.step small {
+    font-size: 12px;
+}
+
+.step.completed span,
+.step.active span {
+    background: #185a9d;
+    border-color: #185a9d;
+    color: white;
+}
+
+.step.active small,
+.step.completed small {
+    color: #185a9d;
+    font-weight: bold;
+}
+
+.progress-line {
+    height: 2px;
+    width: 65px;
+    background: #43cea2;
+    margin: 0 10px 20px;
+}
+
+/* Education Sections */
+
+.education-group {
+    margin-bottom: 27px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 18px;
+}
+
+.section-number {
+    width: 40px;
+    height: 40px;
+    background: #e8f5f3;
+    color: #185a9d;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.section-heading h3 {
+    font-size: 17px;
+    color: #333;
+    margin: 0 0 4px;
+}
+
+.section-heading p {
+    font-size: 12px;
+    color: #888;
+    margin: 0;
+}
+
+/* Labels */
+
+.education-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Input Fields */
+
+.education-group input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d5d5d5;
+    border-radius: 9px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.education-group input:focus {
+    outline: none;
+    border-color: #185a9d;
+    box-shadow: 0 0 5px rgba(24,90,157,0.15);
+}
+
+/* Error */
+
+.education-group .error {
+    display: block;
+    font-size: 12px;
+    color: #d9534f;
+    margin-top: 5px;
+}
+
+/* Continue Button */
+
+.education-button {
+    display: block;
+    margin: 30px auto 0;
+    min-width: 150px;
+    padding: 13px 25px;
+
+    background: linear-gradient(to right, #43cea2, #185a9d);
+
+    color: white;
+    border: none;
+    border-radius: 30px;
+
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.education-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(24,90,157,0.2);
+}
+
+.education-button span {
+    margin-left: 8px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .education-container {
+        padding: 30px 20px;
+    }
+
+    .education-container h2 {
+        font-size: 24px;
+    }
+
+    .progress-line {
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
+
+/* =================================
+   ADDRESS DETAILS PAGE
+================================= */
+
+body.page-address {
+    background: #f4f4f9;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 20px;
+}
+
+/* Main Container */
+
+.address-container {
+    background: white;
+    width: 540px;
+    max-width: 100%;
+
+    padding: 35px 40px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Heading */
+
+.address-container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.address-subtitle {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Input Groups */
+
+.address-group {
+    margin-bottom: 22px;
+}
+
+.address-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Input Fields */
+
+.address-group input {
+    width: 100%;
+    padding: 13px 14px;
+
+    border: 1px solid #d5d5d5;
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.address-group input:focus {
+    outline: none;
+    border-color: #185a9d;
+
+    box-shadow: 0 0 5px rgba(24,90,157,0.15);
+}
+
+/* Error Messages */
+
+.address-group .error {
+    display: block;
+    color: #d9534f;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Submit Button */
+
+.address-button {
+    display: block;
+
+    min-width: 140px;
+    margin: 30px auto 0;
+
+    padding: 13px 25px;
+
+    background: linear-gradient(
+        to right,
+        #43cea2,
+        #185a9d
+    );
+
+    color: white;
+
+    border: none;
+    border-radius: 30px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.address-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 15px rgba(24,90,157,0.2);
+}
+
+.address-button span {
+    margin-left: 8px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    .address-container {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .address-container h2 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* =================================
+   FINAL CONFIRMATION PAGE
+================================= */
+
+body.page-confirm {
+    background: #f4f4f9;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 20px;
+}
+
+/* Main Container */
+
+.confirmation-container {
+    background: white;
+    width: 750px;
+    max-width: 100%;
+
+    padding: 35px 40px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* Heading */
+
+.confirmation-container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.confirm-subtitle {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Sections */
+
+.confirm-section {
+    background: #fafbfc;
+    border: 1px solid #e8e8e8;
+
+    padding: 20px;
+    border-radius: 12px;
+
+    margin-bottom: 22px;
+}
+
+.confirm-section h3 {
+    color: #185a9d;
+    font-size: 18px;
+
+    margin: 0 0 18px;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Grid */
+
+.confirm-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+/* Fields */
+
+.field-group {
+    margin-bottom: 16px;
+}
+
+.field-group:last-child {
+    margin-bottom: 0;
+}
+
+.field-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+
+    margin-bottom: 7px;
+}
+
+.field-group input {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    background: #f4f6f8;
+    color: #444;
+
+    font-size: 14px;
+}
+
+/* Buttons */
+
+.confirm-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin-top: 28px;
+}
+
+.confirm-buttons button {
+    padding: 13px 22px;
+
+    border: none;
+    border-radius: 30px;
+
+    font-size: 15px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.back-button {
+    background: #e8e8e8;
+    color: #333;
+}
+
+.confirm-button {
+    background: linear-gradient(
+        to right,
+        #43cea2,
+        #185a9d
+    );
+
+    color: white;
+}
+
+.confirm-buttons button:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .confirmation-container {
+        padding: 25px 18px;
+    }
+
+    .confirmation-container h2 {
+        font-size: 24px;
+    }
+
+    .confirm-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .confirm-buttons {
+        flex-direction: column;
+    }
+
+    .confirm-buttons button {
+        width: 100%;
+    }
+
+}
+ 
+/* SUCCESS POPUP */
+
+.success-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.success-popup {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px 30px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    animation: popupAppear 0.3s ease;
+}
+
+.popup-check {
+    width: 85px;
+    height: 85px;
+    border: 6px solid #078b45;
+    border-radius: 50%;
+    color: #078b45;
+    font-size: 60px;
+    line-height: 75px;
+    margin: 0 auto 22px;
+    font-weight: 400;
+}
+
+.success-popup h2 {
+    color: #078b45;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.success-popup p {
+    color: #777777;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+
+.success-popup button {
+    width: 100%;
+    padding: 15px;
+    background: #078b45;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.success-popup button:hover {
+    background: #056d36;
+}
+
+@keyframes popupAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+

@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Success Screen */
+        .success-screen {
+            display: none;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(120deg, #39364d, #85809b);
+            font-family: Arial, sans-serif;
+        }
+
+        .success-card {
+            width: 85%;
+            max-width: 580px;
+            padding: 55px 35px 50px;
+            background: #f8f8fa;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .success-card h1 {
+            font-size: 46px;
+            margin: 0 0 15px;
+            color: #111;
+        }
+
+        .success-card p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 42px;
+        }
+
+        .success-icon {
+            width: 110px;
+            height: 110px;
+            border: 7px solid #19bd9d;
+            border-radius: 50%;
+            margin: 0 auto 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .success-icon span {
+            color: #19bd9d;
+            font-size: 75px;
+            line-height: 1;
+        }
+
+        .success-card button {
+            padding: 15px 32px;
+            border: none;
+            border-radius: 35px;
+            background: linear-gradient(110deg, #36c9a2, #1763a8);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .success-card button:hover {
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 600px) {
+            .success-card {
+                width: 80%;
+                padding: 40px 20px;
+            }
+
+            .success-card h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body class="page-confirm">
+
+    <!-- CONFIRMATION REVIEW SCREEN -->
+
+    <div class="confirmation-container" id="confirmationScreen">
+
+        <h2>Confirm Your Details</h2>
+
+        <p class="confirm-subtitle">
+            Please review your information before submitting.
+        </p>
+
+        <form id="confirmationForm">
+
+            <div class="confirm-section">
+                <h3>Registration Details</h3>
+                <div class="field-group">
+                    <label>Email Address</label>
+                    <input type="email" id="gmailInput" readonly>
+                </div>
+            </div>
+
+            <div class="confirm-section">
+                <h3>Personal Details</h3>
+
+                <div class="confirm-grid">
+                    <div class="field-group">
+                        <label>Full Name</label>
+                        <input type="text" id="nameInput" readonly>
+                    </div>
+
+                    <div class="field-group">
+                        <label>Age</label>
+                        <input type="text" id="ageInput" readonly>
+                    </div>
+
+                    <div class="field-group">
+                        <label>Gender</label>
+                        <input type="text" id="genderInput" readonly>
+                    </div>
+
+                    <div class="field-group">
+                        <label>Mobile Number</label>
+                        <input type="text" id="mobileInput" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <div class="confirm-section">
+                <h3>Education Details</h3>
+
+                <div class="field-group">
+                    <label>SSC</label>
+                    <input type="text" id="sscInput" readonly>
+                </div>
+
+                <div class="field-group">
+                    <label>Intermediate / Diploma</label>
+                    <input type="text" id="iddInput" readonly>
+                </div>
+
+                <div class="field-group">
+                    <label>Undergraduate</label>
+                    <input type="text" id="ugdInput" readonly>
+                </div>
+            </div>
+
+            <div class="confirm-section">
+                <h3>Address Details</h3>
+
+                <div class="confirm-grid">
+                    <div class="field-group">
+                        <label>Street</label>
+                        <input type="text" id="streetInput" readonly>
+                    </div>
+
+                    <div class="field-group">
+                        <label>City</label>
+                        <input type="text" id="cityInput" readonly>
+                    </div>
+
+                    <div class="field-group">
+                        <label>State</label>
+                        <input type="text" id="stateInput" readonly>
+                    </div>
+
+                    <div class="field-group">
+                        <label>Pincode</label>
+                        <input type="text" id="pincodeInput" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <div class="confirm-buttons">
+
+                <button type="button" id="backBtn" class="back-button">
+                    ← Back
+                </button>
+
+                <button type="submit" id="submitBtn" class="confirm-button">
+                    Confirm Registration →
+                </button>
+
+            </div>
+
+        </form>
+    </div>
+
+
+    <!-- FINAL SUCCESS SCREEN -->
+
+    <div class="success-screen" id="successScreen">
+
+        <div class="success-card">
+
+            <h1>Registration Successful!!</h1>
+
+            <p>Your details are succesfully saved</p>
+
+            <div class="success-icon">
+                <span>✓</span>
+            </div>
+
+            <button onclick="window.location.href='index.html'">
+                Back to Home
+            </button>
+
+        </div>
+
+    </div>
+    
+<!-- SUCCESS POPUP -->
+<div class="success-overlay" id="successPopup">
+
+    <div class="success-popup">
+
+        <div class="popup-check">✓</div>
+
+        <h2>Registration Successful!</h2>
+
+        <p>
+            Your details have been successfully submitted.
+            Thank you for registering!
+        </p>
+
+        <button type="button" id="successOkBtn">OK</button>
+
+    </div>
+
+</div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>

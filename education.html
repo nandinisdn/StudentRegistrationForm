@@ -1,0 +1,109 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Education Details</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page-education">
+
+    <div class="education-container">
+
+        <h2>Education Details</h2>
+
+        <p class="education-subtitle">
+            Please provide your academic information below.
+        </p>
+
+        <form id="educationForm">
+
+            <!-- SSC -->
+            <div class="education-group">
+
+                <div class="section-heading">
+                    <span class="section-number">01</span>
+                    <div>
+                        <h3>SSC Details</h3>
+                        <p>Secondary School Education</p>
+                    </div>
+                </div>
+
+                <label for="sscDetails">School Name</label>
+
+                <input
+                    type="text"
+                    id="sscDetails"
+                    placeholder="Enter your school name"
+                    required>
+
+                <span class="error" id="sscDetailsError"></span>
+
+            </div>
+
+            <!-- Intermediate -->
+            <div class="education-group">
+
+                <div class="section-heading">
+                    <span class="section-number">02</span>
+                    <div>
+                        <h3>Intermediate / Diploma</h3>
+                        <p>Higher Secondary Education</p>
+                    </div>
+                </div>
+
+                <label for="interDiplomaDetails">
+                    Institution Name
+                </label>
+
+                <input
+                    type="text"
+                    id="interDiplomaDetails"
+                    placeholder="Enter your college name"
+                    required>
+
+                <span class="error" id="interDiplomaDetailsError"></span>
+
+            </div>
+
+            <!-- Undergraduate -->
+            <div class="education-group">
+
+                <div class="section-heading">
+                    <span class="section-number">03</span>
+                    <div>
+                        <h3>Undergraduate Details</h3>
+                        <p>College / University Education</p>
+                    </div>
+                </div>
+
+                <label for="ugDetails">Institution Name</label>
+
+                <input
+                    type="text"
+                    id="ugDetails"
+                    placeholder="Enter your university or college name"
+                    required>
+
+                <span class="error" id="ugDetailsError"></span>
+
+            </div>
+
+            <button type="submit" class="education-button">
+                Continue <span>→</span>
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+```

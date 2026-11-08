@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Address Details</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page-address">
+
+    <div class="address-container">
+
+        <h2>Address Details</h2>
+
+        <p class="address-subtitle">
+            Please provide your residential address information.
+        </p>
+
+        <form id="addressForm">
+
+            <!-- Street -->
+            <div class="address-group">
+
+                <label for="streetname">Street Address</label>
+
+                <input
+                    type="text"
+                    id="streetname"
+                    placeholder="Enter your street name"
+                    autocomplete="street-address"
+                    required>
+
+                <span class="error" id="streetError"></span>
+
+            </div>
+
+            <!-- City -->
+            <div class="address-group">
+
+                <label for="cityname">City</label>
+
+                <input
+                    type="text"
+                    id="cityname"
+                    placeholder="Enter your city"
+                    autocomplete="address-level2"
+                    required>
+
+                <span class="error" id="citynameError"></span>
+
+            </div>
+
+            <!-- State -->
+            <div class="address-group">
+
+                <label for="statename">State</label>
+
+                <input
+                    type="text"
+                    id="statename"
+                    placeholder="Enter your state"
+                    autocomplete="address-level1"
+                    required>
+
+                <span class="error" id="statenameError"></span>
+
+            </div>
+
+            <!-- Pincode -->
+            <div class="address-group">
+
+                <label for="pincodeno">Pincode</label>
+
+                <input
+                    type="text"
+                    id="pincodeno"
+                    placeholder="Enter 6-digit pincode"
+                    maxlength="6"
+                    pattern="[0-9]{6}"
+                    title="Enter a valid 6-digit pincode"
+                    inputmode="numeric"
+                    autocomplete="postal-code"
+                    required>
+
+                <span class="error" id="pincodeError"></span>
+
+            </div>
+
+            <button type="submit" class="address-button">
+                Submit <span>→</span>
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
